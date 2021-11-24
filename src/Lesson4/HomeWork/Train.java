@@ -1,22 +1,22 @@
 package Lesson4.HomeWork;
 
 public class Train {
-    private int speed;
-    private boolean isComing;
+    public static int speed;
+    public static boolean isComing;
     private boolean isStanding;
     private int numbersOfWagons;
     private String direction;
     private String typeOfTransportation;
 
 
-    public Train(int numbersOfWagons, String direction, String typeOfTransportation) {
+    public Train( String direction,int numbersOfWagons, String typeOfTransportation) {
 
-        this.numbersOfWagons = numbersOfWagons;
         this.direction = direction;
+        this.numbersOfWagons = numbersOfWagons;
         this.typeOfTransportation = typeOfTransportation;
     }
 
-    public void go(int currentSpeed) {
+    public static void go(int currentSpeed) {
         isComing = true;
         speed = currentSpeed;
         System.out.println("The train started to move" + " his speed is " + currentSpeed);
@@ -24,7 +24,7 @@ public class Train {
 
     public void setStop(boolean stop) {
         isStanding = stop;
-        System.out.println("The train stopped");
+        System.out.println("The train " + direction+   " stopped.");
     }
 
     public void viewedStatus() {

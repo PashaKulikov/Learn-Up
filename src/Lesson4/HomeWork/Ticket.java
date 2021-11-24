@@ -1,11 +1,13 @@
 package Lesson4.HomeWork;
 
 public class Ticket {
-    private int numberOfWagon ;
-    private int numberOfPlace;
+    public int numberOfWagon ;
+    public int numberOfPlace;
+    public String direction;
 
-    public Ticket(int numberOfWagon, int numberOfPlace) {
+    public Ticket(String direction, int numberOfWagon, int numberOfPlace) {
         this.numberOfWagon = numberOfWagon;
         this.numberOfPlace = numberOfPlace;
+        this.direction = direction;
     }
 }
