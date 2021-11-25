@@ -24,6 +24,9 @@ public class RGD {
         TrainDriver trainDriver = new TrainDriver();
         trainDriver.doSomeWork();
 
+        trainDriver.getMoney();
+        conductor.getMoney();
+
 
     }
 
