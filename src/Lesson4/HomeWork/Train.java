@@ -31,5 +31,7 @@ public class Train {
         System.out.println((isStanding == false) ? "The train is coming " : "The train is stopped");
     }
 
-
+    public String getDirection() {
+        return direction;
+    }
 }
